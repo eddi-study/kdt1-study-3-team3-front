@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  nginx:
+    image: "ghcr.io/jinho1593/kdt1-study-3-team3/frontend-server:latest"
+    container_name: docker-frontend-deploy-server
+    # restart: unless-stopped
+    # volumes:
+    #   - /home/ec2-user/kdt1-study-3-team3-front/conf:/etc/nginx/conf.d
+    #   - /home/ec2-user/kdt1-study-3-team3-front/html:/usr/share/nginx/html
+    # ports:
+    #   - "80:80"
+
+networks:
+  app:
+    driver: bridge
