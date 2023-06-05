@@ -1,10 +1,10 @@
 version: "3.7"
 services:
-  nginx:
+  frontend:
     image: ghcr.io/jinho1593/kdt1-study-3-team3-front-server:latest
     container_name: docker-frontend-deploy-server
     ports:
-      -"80:80"
+      - "80:80"
     networks:
       - app
       
